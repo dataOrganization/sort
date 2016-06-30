@@ -130,7 +130,7 @@ void merge_sort_recursive_realize(int arr[] ,int temp[] ,int start ,int end){
     merge_sort_recursive_realize(arr, temp, start1, end1);
     merge_sort_recursive_realize(arr, temp, start2, end2);
     int k = start;
-    while (start2<= end2 && start2 <= end2) {
+    while (start1 <= end1 && start2 <= end2) {
         temp[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
     }
     while (start1 <= end1) {
